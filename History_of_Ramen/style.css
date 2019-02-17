@@ -1,0 +1,127 @@
+@font-face {
+	font-family: Brush;
+	src: url(title_font.otf);
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+header {
+	width: 900px;
+	height: 60px;
+	position: absolute;
+	top: 15px;
+	/*left: 15px;*/
+	background: url(images/header_bg.jpg);
+	border: 1px solid black;
+	border-bottom: none;
+}
+#top {
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+	margin: 0;
+	text-align: center;
+	font-size: 45px;
+	vertical-align: center;
+	line-height: 60px;
+	color: black;
+	font-family: Brush;
+}
+#top:hover {
+	color: #CC0000;
+}
+#back, #next {
+	position: absolute;
+	top: 15px;
+	height: 30px;
+	display: none;
+}
+#back {
+	left: 10px;
+}
+#next {
+	right: 10px;
+}
+#back:hover, #next:hover {
+	transform: scale(1.2);
+}
+#container {
+	width: 900px;
+	height: 600px;
+	position: absolute;
+	top: 75px;
+	/*left: 15px;*/
+	background-color: #fff;
+	border: 1px solid black;
+	border-top: none;
+	/*border-top: none;*/
+}
+img {
+	position: absolute;
+}
+#logo {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+	font-size: 90px;
+	text-align: center;
+	font-family: Brush;
+	/*border: 1px solid orange;*/
+} /*positioning from: http://stackoverflow.com/questions/5703552/css-center-text-horizontal-and-vertical-inside-a-div-block*/
+.info1, .info2, .info3, #credits, #instructions {
+	top: 175px;
+	left: 225px;
+	width: 400px;
+	height: 220px;
+	position: absolute;
+	text-align: center;
+	background: #fff;
+	padding: 15px 25px 15px 25px;
+	font-family: 'Bad Script', cursive;
+	line-height: 24px;
+	vertical-align: center;
+	border: 1px solid #8F0000;
+	border-radius: 3px;
+}
+
+#credits h1, #instructions h1 {
+	font-size: 24px;	
+}
+
+b {
+	/*font-weight: normal;*/
+	color: #BB0000;
+}
+.exit {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	width: 18px;
+}
+#help {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	line-height: 20px;
+	vertical-align: center;
+	color: black;
+	border: 1px solid black;
+	border-radius: 50%;
+}
+#help:hover {
+	color: blue;
+	border-color: blue;
+}
+.pageButton, .buttonHov, .goto, #top, .page, #start, .img1, .img2, .img3, .hov2, .hov3, .info1, .info2, .info3, #last, #credits, #instructions {
+	display: none;
+}
